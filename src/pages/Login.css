@@ -1,0 +1,45 @@
+.animate-bg-slide .bg-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+  }
+  
+  @keyframes crossfade {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .bg1 {
+    background-image: url('../assets/bg1.jpg');
+    animation: crossfade 24s infinite;
+  }
+  
+  .bg2 {
+    background-image: url('../assets/bg2.jpg');
+    animation: crossfade 24s infinite;
+    animation-delay: -18s;
+  }
+  
+  .bg3 {
+    background-image: url('../assets/bg3.jpg');
+    animation: crossfade 24s infinite;
+    animation-delay: -12s;
+  }
+  
+  .bg4 {
+    background-image: url('../assets/bg4.jpg');
+    animation: crossfade 24s infinite;
+    animation-delay: -6s;
+  }
